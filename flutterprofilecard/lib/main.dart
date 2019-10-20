@@ -79,6 +79,24 @@ class MyProfile extends StatelessWidget {
                         fontFamily: 'Source Sans Pro'),
                   ),
                 ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.storage,
+                    color: Colors.teal.shade900,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    'https://github.com/ironelder',
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro'),
+                  ),
+                ),
               )
             ],
           ),
