@@ -12,6 +12,7 @@ class MyProfile extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -36,46 +37,47 @@ class MyProfile extends StatelessWidget {
                     letterSpacing: 5.5,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal.shade900,
-                      size: 30.0,
-                    ),
-                    Text(
-                      '+82 10 4332 4029',
-                      style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.teal.shade900,
-                          fontFamily: 'Source Sans Pro'),
-                    )
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal.shade900,
-                      size: 30.0,
-                    ),
-                    Text(
-                      'ironelder@gmail.com',
-                      style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.teal.shade900,
-                          fontFamily: 'Source Sans Pro'),
-                    )
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal.shade900,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    '+82 10 4332 4029',
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro'),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal.shade900,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    'ironelder@gmail.com',
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro'),
+                  ),
                 ),
               )
             ],
